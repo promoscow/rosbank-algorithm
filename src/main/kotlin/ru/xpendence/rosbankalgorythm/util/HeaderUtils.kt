@@ -6,7 +6,7 @@ import org.springframework.http.HttpHeaders
  * Author: Vyacheslav Chernyshov
  * Date: 07.12.19
  * Time: 11:44
- * e-mail: v.chernyshov@pflb.ru
+ * e-mail: slava_rossii@list.ru
  */
 class HeaderUtils {
 

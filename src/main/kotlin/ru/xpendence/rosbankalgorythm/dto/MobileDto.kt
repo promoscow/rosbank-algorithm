@@ -5,7 +5,7 @@ import java.io.Serializable
 /**
  * Author: Vyacheslav Chernyshov
  * Date: 07.12.19
- * Time: 12:58
+ * Time: 14:07
  * e-mail: slava_rossii@list.ru
  */
-data class TaxServiceResponseNative(val suggestions: List<Suggestion> = listOf()) : Serializable
+data class MobileDto(val latitude: String?, val longitude: String?) : Serializable

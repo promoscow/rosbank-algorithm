@@ -5,13 +5,12 @@ import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.RequestMapping
 import org.springframework.web.bind.annotation.RestController
 import ru.xpendence.rosbankalgorythm.dto.Test
-import java.time.LocalDateTime
 
 /**
  * Author: Vyacheslav Chernyshov
  * Date: 03.12.19
  * Time: 17:36
- * e-mail: v.chernyshov@pflb.ru
+ * e-mail: slava_rossii@list.ru
  */
 @RestController
 @RequestMapping("/test")

@@ -15,16 +15,16 @@ import ru.xpendence.rosbankalgorythm.util.HeaderUtils
  * Author: Vyacheslav Chernyshov
  * Date: 07.12.19
  * Time: 11:43
- * e-mail: v.chernyshov@pflb.ru
+ * e-mail: slava_rossii@list.ru
  */
 @Service
 class TaxServiceImpl : TaxService {
 
     @Autowired
-    lateinit var restTemplate: RestTemplate
+    private lateinit var restTemplate: RestTemplate
 
     @Autowired
-    lateinit var mapper: TaxServiceResponseMapper
+    private lateinit var mapper: TaxServiceResponseMapper
 
     override fun send(dto: TaxServiceRequestDto): TaxServiceResponseDto {
         val httpEntity = HttpEntity(dto, HeaderUtils.forTaxService())

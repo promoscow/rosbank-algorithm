@@ -6,24 +6,22 @@ import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.RequestMapping
 import org.springframework.web.bind.annotation.RequestParam
 import org.springframework.web.bind.annotation.RestController
-import ru.xpendence.rosbankalgorythm.dto.TaxServiceRequestDto
-import ru.xpendence.rosbankalgorythm.dto.TaxServiceResponseDto
-import ru.xpendence.rosbankalgorythm.service.TaxService
+import ru.xpendence.rosbankalgorythm.dto.MobileDto
+import ru.xpendence.rosbankalgorythm.service.MobileService
 
 /**
  * Author: Vyacheslav Chernyshov
  * Date: 07.12.19
- * Time: 12:22
- * e-mail: v.chernyshov@pflb.ru
+ * Time: 14:04
+ * e-mail: slava_rossii@list.ru
  */
 @RestController
-@RequestMapping("/inn")
-class TaxServiceController {
+@RequestMapping("/mobile")
+class MobileController {
 
     @Autowired
-    lateinit var service: TaxService
+    private lateinit var service: MobileService
 
     @GetMapping
-    fun getByInn(@RequestParam inn: String): ResponseEntity<TaxServiceResponseDto> =
-            ResponseEntity.ok(service.send(TaxServiceRequestDto(inn)))
+    fun get(@RequestParam phone: String): ResponseEntity<MobileDto> = ResponseEntity.ok(service.send(phone))
 }

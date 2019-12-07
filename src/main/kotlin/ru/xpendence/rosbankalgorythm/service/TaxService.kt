@@ -7,7 +7,7 @@ import ru.xpendence.rosbankalgorythm.dto.TaxServiceResponseDto
  * Author: Vyacheslav Chernyshov
  * Date: 07.12.19
  * Time: 11:42
- * e-mail: v.chernyshov@pflb.ru
+ * e-mail: slava_rossii@list.ru
  */
 interface TaxService {
 

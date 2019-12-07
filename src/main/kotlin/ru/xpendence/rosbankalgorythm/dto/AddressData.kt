@@ -6,7 +6,7 @@ import com.fasterxml.jackson.annotation.JsonProperty
  * Author: Vyacheslav Chernyshov
  * Date: 07.12.19
  * Time: 13:11
- * e-mail: v.chernyshov@pflb.ru
+ * e-mail: slava_rossii@list.ru
  */
 data class AddressData(
 

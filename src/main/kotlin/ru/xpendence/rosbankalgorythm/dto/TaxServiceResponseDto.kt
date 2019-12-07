@@ -1,12 +1,13 @@
 package ru.xpendence.rosbankalgorythm.dto
 
 import com.fasterxml.jackson.annotation.JsonInclude
+import java.io.Serializable
 
 /**
  * Author: Vyacheslav Chernyshov
  * Date: 07.12.19
  * Time: 11:58
- * e-mail: v.chernyshov@pflb.ru
+ * e-mail: slava_rossii@list.ru
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 data class TaxServiceResponseDto(
@@ -15,4 +16,4 @@ data class TaxServiceResponseDto(
         val longitude: String?,
         val inn: String?,
         val region: String?
-        )
+        ) : Serializable
