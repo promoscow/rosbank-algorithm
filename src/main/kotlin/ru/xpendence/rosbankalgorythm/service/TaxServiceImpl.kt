@@ -10,6 +10,7 @@ import ru.xpendence.rosbankalgorythm.dto.TaxServiceResponseDto
 import ru.xpendence.rosbankalgorythm.dto.TaxServiceResponseNative
 import ru.xpendence.rosbankalgorythm.mapper.TaxServiceResponseMapper
 import ru.xpendence.rosbankalgorythm.util.HeaderUtils
+import ru.xpendence.rosbankalgorythm.util.logger
 
 /**
  * Author: Vyacheslav Chernyshov
@@ -19,6 +20,8 @@ import ru.xpendence.rosbankalgorythm.util.HeaderUtils
  */
 @Service
 class TaxServiceImpl : TaxService {
+
+    val log = logger<TaxServiceImpl>()
 
     @Autowired
     private lateinit var restTemplate: RestTemplate
@@ -34,6 +37,7 @@ class TaxServiceImpl : TaxService {
                 httpEntity,
                 TaxServiceResponseNative::class.java
         ).body!!)
+        log.info("returned info for ${dto.query}: $body")
         return body
     }
 }
